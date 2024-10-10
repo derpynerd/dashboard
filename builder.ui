@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object id="window" class="GtkWindow">
+    <!-- window properties -->
+    <property name="title">Dashboard</property>
+    <property name="default-width">1080</property>
+    <property name="default-height">768</property>
+
+    <!-- extra properties -->
+    <property name="can-focus">False</property>
+
+    <!-- child objects -->
+    <child>
+      <object id="grid" class="GtkGrid">
+        <child>
+          <object id="submit" class="GtkButton">
+            <property name="label">Submit button</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
